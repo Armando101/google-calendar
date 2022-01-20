@@ -7,12 +7,14 @@
   align-items: flex-end;
   padding-inline-end: 1rem;
   white-space: nowrap;
+  background-color: var(--white);
+  z-index: 2;
 }
 
 .timezoneCell::before {
   content: "";
   inline-size: 0.5rem;
-  block-size: 1px;
+  block-size: 0.5px;
   background-color: var(--gray20);
   position: absolute;
   inset-inline-end: 0;

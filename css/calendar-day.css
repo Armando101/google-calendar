@@ -30,7 +30,7 @@
 
 .calendarDay::before {
   content: "";
-  inline-size: 1px;
+  inline-size: 0.5px;
   block-size: 2rem;
   background-color: currentColor;
   position: absolute;
