@@ -300,12 +300,61 @@
     </div>
     <dialog class="modal">
       <form action="">
-        <p>Form</p>
-        <div class="modal-actions">
-          <button class="button">Cancelar</button>
-          <button class="button is-primary">Guardar</button>
+        <div class="input">
+          <input
+            required
+            type="text"
+            name="title"
+            placeholder="Añade un título"
+          />
+        </div>
+        <div class="input">
+          <input type="date" name="date" required />
+        </div>
+        <div class="input">
+          <input type="time" name="time-start" required />
+        </div>
+        <div class="input">
+          <input type="time" name="time-end" required />
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            name="guests"
+            list="guests"
+            placeholder="Agregar invitados"
+            required
+          />
+          <datalist id="guests">
+            <option value="leo"></option>
+            <option value="juan"></option>
+            <option value="carlos"></option>
+            <option value="miguel"></option>
+          </datalist>
+        </div>
+        <div class="input">
+          <input type="text" name="location" placeholder="Agregar ubicación" />
+        </div>
+        <div class="input">
+          <textarea
+            name="description"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Agregar descripción"
+          ></textarea>
+        </div>
+        <div class="input">
+          <input type="file" multiple />
+        </div>
+        <div class="input">
+          <input type="submit" />
         </div>
       </form>
+      <div class="modal-actions">
+        <button class="button">Cancelar</button>
+        <button class="button is-primary">Guardar</button>
+      </div>
     </dialog>
 
     <script>
