@@ -42,9 +42,14 @@
 .miniCalendar-monthDay:focus {
   background-color: var(--gray10);
 }
+
 .miniCalendar-monthDay.is-selected {
   background-color: var(--blue10);
   color: var(--white);
+}
+
+.miniCalendar-monthDay.is-selected:hover {
+  background-color: var(--blue30);
 }
 .miniCalendar-monthDay.is-inactive {
   color: var(--gray20);
