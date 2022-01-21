@@ -14,18 +14,43 @@
   </head>
   <body>
     <div class="page">
-      <div class="header">
-        <select name="" id="" class="select">
-          <option value="">Semana</option>
-          <option value="">Día</option>
-        </select>
-        <button class="button is-rounded is-shadow">
-          <i class="icon-plus"></i> <span>button</span>
-        </button>
-        <button class="button is-compact"><i class="icon-plus"></i></button>
-        <button class="button is-primary">Button</button>
-        <button class="button is-secondary">Button</button>
-      </div>
+      <header class="header">
+        <div class="header-primary">
+          <div class="header-logo">
+            <button class="button is-compact">
+              <i class="icon-hamburguer-button" aria-label="hidden"></i>
+            </button>
+
+            <a href="#" aria-current="page" aria-label="Calendar" tabindex="-1">
+              <img src="./images/logo.png" alt="Logo" />
+            </a>
+          </div>
+
+          <div class="calendarStatus">
+            <button class="button is-secondary">Hoy</button>
+            <span>
+              <a href="#" class="button" aria-label="Semena anterior">
+                <i class="icon-chevron-left" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="button" aria-label="Siguiente semana">
+                <i class="icon-chevron-right" aria-hidden="true"></i>
+              </a>
+            </span>
+            <time class="calendarStatus-date" datetime="25-06-2021"
+              >25 de Junio del 2022</time
+            >
+          </div>
+        </div>
+        <div class="header-secondary">
+          <select name="" id="" class="select">
+            <option value="">Semana</option>
+            <option value="">Día</option>
+          </select>
+          <a href="#user">
+            <img src="./images/Ellipse 1.png" alt="User" />
+          </a>
+        </div>
+      </header>
       <div class="sidebar"></div>
       <main class="calendar">
         <div class="currentTime"></div>
