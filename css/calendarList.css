@@ -1,0 +1,28 @@
+.calendarList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.calendarList h3 {
+  font: var(--body1-medium);
+  color: var(--gray30);
+  margin: 0;
+}
+
+.calendarAdded {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.calendarAdded p {
+  margin: 0;
+  color: var(--gray30);
+}
+
+.calendarAdded i {
+  color: var(--gray50);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
