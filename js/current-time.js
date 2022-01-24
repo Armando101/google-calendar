@@ -7,7 +7,10 @@ function setCurrentTimePosition() {
   // console.log({ currentDay }, { currentHour })
   const $currentTime = document.querySelector(".currentTime");
 
-  const $calendar = document.querySelector(".calendar-week");
+  let $calendar = document.querySelector(".calendar-week");
+  if (!$calendar) {
+    $calendar = document.querySelector(".calendar-day");
+  }
   let calendarBlockSize = $calendar.clientHeight;
   let calendarInlineSize = $calendar.clientWidth;
 
