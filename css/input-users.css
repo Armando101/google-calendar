@@ -1,0 +1,40 @@
+.input.is-users {
+  align-items: baseline;
+}
+
+.input-userList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.input.is-users .input-body {
+  gap: 0.75rem;
+}
+
+.input.is-users .input-body {
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.input-user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-user img {
+  inline-size: 2rem;
+  block-size: 2rem;
+}
+
+.input-userInfo * {
+  margin: 0;
+}
+
+.input-userName {
+  color: var(--gray50);
+}
+
+.input-userRole {
+  color: var(--gray20);
+}
